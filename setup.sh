@@ -4,7 +4,7 @@
 
 #ln -s source_file link_name
 
-files=('bashrc' 'bash_profile' 'vimrc' 'vimrc-p' 'Xdefaults' 'xinitrc' 'conkyrc')
+files=('bashrc' 'bash_profile' 'vimrc' 'vimrc-p' 'Xdefaults' 'xinitrc' 'conkyrc' 'vim')
 forced=true
 
 # itarate over all arguments
