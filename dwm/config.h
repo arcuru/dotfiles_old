@@ -50,14 +50,9 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *browser[] = { "chromium", NULL };
 static const char *browserq[] = { "chromium", "-incognito", NULL };
 static const char *email[] = { "chromium", "--app=https://mail.google.com", NULL };
-static const char *slock[] = { "slock", NULL };
-static const char *virtualbox[] = { "VirtualBox", "--startvm", "Windows", NULL };
-static const char *music[] = { "st", "-e", "ncmpcpp", NULL };
-static const char *musicn[] = { "ncmpcpp", "next", NULL };
-static const char *musicp[] = { "ncmpcpp", "prev", NULL };
-static const char *musict[] = { "ncmpcpp", "toggle", NULL };
 static const char *cal[] = { "chromium", "--app=https://calendar.google.com", NULL };
 static const char *voice[] = { "chromium", "--app=https://voice.google.com", NULL };
+static const char *kindle[] = { "chromium", "--app=https://read.amazon.com", NULL };
 static const char *office[] = { "soffice", NULL };
 
 
@@ -68,12 +63,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_w,      spawn,          {.v = browser } },
 	{ MODKEY,                       XK_q,      spawn,          {.v = browserq } },
 	{ MODKEY,                       XK_e,      spawn,          {.v = email } },
-	{ MODKEY|ShiftMask,             XK_z,      spawn,          {.v = slock } },
-	{ MODKEY,                       XK_v,      spawn,          {.v = virtualbox } },
-	{ MODKEY|ShiftMask,             XK_m,      spawn,          {.v = music } },
-	{ MODKEY,                       XK_n,      spawn,          {.v = musicn } },
-	{ MODKEY|ShiftMask,             XK_n,      spawn,          {.v = musicp } },
-	{ MODKEY,                       XK_b,      spawn,          {.v = musict } },
+	{ MODKEY,                       XK_b,      spawn,          {.v = kindle } },
 	{ MODKEY,                       XK_r,      spawn,          {.v = cal } },
 	{ MODKEY,                       XK_t,      spawn,          {.v = voice } },
 	{ MODKEY,                       XK_o,      spawn,          {.v = office } },
