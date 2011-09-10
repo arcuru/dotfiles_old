@@ -1,0 +1,4 @@
+# Exclude dwm files
+dwm/*
+!dwm/config.h
+
