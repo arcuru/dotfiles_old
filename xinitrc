@@ -1,5 +1,4 @@
 #Generic setup stuff
-(sleep 300s && dropboxd) &
 
 if [ $(tty) = /dev/tty1 ]; then
 	
@@ -10,4 +9,7 @@ if [ $(tty) = /dev/tty1 ]; then
 	while true; do
 		dwm 2> ~/.dwm.log
 	done
+fi
+if [ $(tty) = /dev/tty2 ]; then
+	exec chromium
 fi

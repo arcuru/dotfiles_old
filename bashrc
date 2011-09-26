@@ -27,6 +27,7 @@ alias v='vim'
 alias monitor-vga='xrandr --output LVDS1 --off --output VGA1 --auto'
 alias monitor-eee='xrandr --output LVDS1 --auto --output VGA1 --off'
 alias monitor-dual='xrandr --output LVDS1 --auto --output VGA1 --auto; xrandr --output VGA1 --right-of LVDS1'
+alias monitor-copy='xrandr --output VGA1 --auto --same-as LVDS1'
 alias vp='vim -u ~/.vimrc-p'
 alias kindle='wine C:\\Program\ Files\ \(x86\)\\Amazon\\Kindle\\Kindle.exe'
 alias speaker1="sudo sed -i 's/defaults.ctl.card\ ./defaults.ctl.card\ 1/' /usr/share/alsa/alsa.conf; sudo sed -i 's/defaults.pcm.card\ ./defaults.pcm.card\ 1/' /usr/share/alsa/alsa.conf"
