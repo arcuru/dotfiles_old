@@ -1,5 +1,5 @@
 # Print private welcome message
-. $HOME/.msg
+. $HOME/Dropbox/msg
 
 # Check for an interactive session
 [ -z "$PS1" ] && return
