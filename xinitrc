@@ -1,5 +1,8 @@
 #Generic setup stuff
 urxvtd &
+(sleep 1m && dropboxd) &
+xset +fp /usr/share/fonts/local
+xset fp rehash
 
 if [ $(tty) = /dev/tty1 ]; then
 	

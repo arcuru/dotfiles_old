@@ -5,5 +5,5 @@ total_run_times 0
 use_spacer none
 #$if_mpd_playing $mpd_artist - $mpd_title ($mpd_elapsed/$mpd_length) :: 
 TEXT
-${cpu cpu1}% / ${cpu cpu2}% / ${cpu cpu3}% / ${cpu cpu4}% :: $memperc% :: $battery_percent% / $battery_time :: ${time %a %b %d %I:%M%P}
+${cpu cpu1}% / ${cpu cpu2}% / ${cpu cpu3}% / ${cpu cpu4}% :: $memperc% :: ${battery_percent BAT1}% / ${battery_time BAT1} :: ${time %a %b %d %I:%M%P}
 

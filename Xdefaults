@@ -31,8 +31,7 @@ URxvt*shading: 75
 
 ! fonts
 ! run "fc-list" for a list of available fonts
-URxvt*font: xft:Monospace:pixelsize=12
-
+URxvt*font: -*-terminus-*-r-*-*-12-*-*-*-*-*-*-*
 URxvt*scrollBar: False
 URxvt*scrollTtyOutput: False
 URxvt*scrollTtyKeypress: True
