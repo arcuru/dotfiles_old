@@ -133,11 +133,11 @@ $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  */
 class |CLASSNAME|
 {
-  public:
-    /* ====================  LIFECYCLE     ======================================= */
-    |CLASSNAME| ();                             /* constructor      */
-    |CLASSNAME| ( const |CLASSNAME| &other );   /* copy constructor */
-    ~|CLASSNAME| ();                            /* destructor       */
+	public:
+		/* ====================  LIFECYCLE     ======================================= */
+		|CLASSNAME| ();                             /* constructor      */
+		|CLASSNAME| ( const |CLASSNAME| &other );   /* copy constructor */
+		~|CLASSNAME| ();                            /* destructor       */
 
 		/* ====================  ACCESSORS     ======================================= */
 
@@ -145,12 +145,12 @@ class |CLASSNAME|
 
 		/* ====================  OPERATORS     ======================================= */
 
-    |CLASSNAME|& operator = ( const |CLASSNAME| &other ); /* assignment operator */
+		|CLASSNAME|& operator = ( const |CLASSNAME| &other ); /* assignment operator */
 
-  protected:
+	protected:
 		/* ====================  DATA MEMBERS  ======================================= */
 
-  private:
+	private:
 		/* ====================  DATA MEMBERS  ======================================= */
 
 };
@@ -214,10 +214,10 @@ $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  */
 class |CLASSNAME|
 {
-  public:     |CLASSNAME| ( string msg = "|CLASSNAME|" ):message(msg)  { }
-              virtual ~|CLASSNAME| ( )  { }
-              virtual string what ( ) const throw ( )  { return message; }
-  protected:  string  message;
+	public:     |CLASSNAME| ( string msg = "|CLASSNAME|" ):message(msg)  { }
+		virtual ~|CLASSNAME| ( )  { }
+		virtual string what ( ) const throw ( )  { return message; }
+	protected:  string  message;
 };
 
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -266,9 +266,9 @@ $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 template < class T >
 class |CLASSNAME|
 {
-  public:
-    /* ====================  LIFECYCLE     ======================================= */
-    |CLASSNAME| ();                             /* constructor */
+	public:
+		/* ====================  LIFECYCLE     ======================================= */
+		|CLASSNAME| ();                             /* constructor */
 
 		/* ====================  ACCESSORS     ======================================= */
 
@@ -276,11 +276,11 @@ class |CLASSNAME|
 
 		/* ====================  OPERATORS     ======================================= */
 
-  protected:
-    /* ====================  DATA MEMBERS  ======================================= */
+	protected:
+		/* ====================  DATA MEMBERS  ======================================= */
 
-  private:
-    /* ====================  DATA MEMBERS  ======================================= */
+	private:
+		/* ====================  DATA MEMBERS  ======================================= */
 
 };
 
@@ -311,11 +311,11 @@ $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 template < class T >
 class |CLASSNAME|
 {
-  public:
-    // ====================  LIFECYCLE     =======================================
-    |CLASSNAME| ();                           /* constructor      */
-    |CLASSNAME| ( const |CLASSNAME| &other ); /* copy constructor */
-    ~|CLASSNAME| ();                          /* destructor       */
+	public:
+		// ====================  LIFECYCLE     =======================================
+		|CLASSNAME| ();                           /* constructor      */
+		|CLASSNAME| ( const |CLASSNAME| &other ); /* copy constructor */
+		~|CLASSNAME| ();                          /* destructor       */
 
 		/* ====================  ACCESSORS     ======================================= */
 
@@ -323,13 +323,13 @@ class |CLASSNAME|
 
 		/* ====================  OPERATORS     ======================================= */
 
-    |CLASSNAME|& operator = ( const |CLASSNAME| &other ); // assignment operator
+		|CLASSNAME|& operator = ( const |CLASSNAME| &other ); // assignment operator
 
-  protected:
-    /* ====================  DATA MEMBERS  ======================================= */
+	protected:
+		/* ====================  DATA MEMBERS  ======================================= */
 
-  private:
-    /* ====================  DATA MEMBERS  ======================================= */
+	private:
+		/* ====================  DATA MEMBERS  ======================================= */
 
 };
 
@@ -381,7 +381,7 @@ template < class T >
 template < class T >
 |CLASSNAME|< T >& |CLASSNAME|< T >::operator = ( const |CLASSNAME| &other )
 {
-  return *this;
+	return *this;
 }
 
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
