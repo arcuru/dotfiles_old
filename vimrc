@@ -82,5 +82,8 @@ filetype plugin indent on
 syntax on
 
 let g:clang_complete_copen=1
+let g:clang_use_library=1
+let g:clang_user_options = '-std=c++11'
+let g:clang_close_preview=1
 map <F2> :call g:ClangUpdateQuickFix() <CR>
 
