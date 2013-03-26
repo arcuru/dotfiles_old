@@ -20,7 +20,7 @@ alias tarballpack='tar cvzf $1 $2'
 alias tarballunpack='tar xzvf'
 alias maxbright='sudo setpci -s 00:02.0 f4.b=ff'
 alias dwmcompile='cd ~/dotfiles/dwm; cp config.h src/config.h; makepkg -efi --skipinteg; cd -'
-alias m='mplayer'
+alias m='mplayer -af scaletempo'
 alias sus='sudo pm-suspend'
 alias t='tmux'
 alias v='vim'
@@ -36,7 +36,6 @@ alias speaker0="sudo sed -i 's/defaults.ctl.card\ ./defaults.ctl.card\ 0/' /usr/
 #	Upgrading with bauerbill & pacman
 #alias u='sudo bauerbill -Syu --rebase --aur --build-as patty'
 #alias i='sudo bauerbill -S --aur --build-as patty'
-alias r='sudo pacman -Rs'
 #alias clean='rm -rf /tmp/bauerbill'
 #alias search='bauerbill -Ss --aur'
 
