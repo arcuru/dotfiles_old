@@ -1,35 +1,60 @@
-" .vimrc
-" See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
+set nocompatible               " be iMproved
+filetype off                   " required!
 
-" For multi-byte character support (CJK support, for example):
-"set fileencodings=ucs-bom,utf-8,cp936,big5,euc-jp,euc-kr,gb18030,latin1
-       
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" My Bundles
+"
+" original repos on github
+Bundle 'Raimondi/delimitMate'
+Bundle 'scrooloose/syntastic'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'Valloric/YouCompleteMe'
+
+"Bundle 'tpope/vim-fugitive'
+"Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Bundle 'tpope/vim-rails.git'
+" vim-scripts repos
+"Bundle 'L9'
+"Bundle 'FuzzyFinder'
+" non github repos
+"Bundle 'git://git.wincent.com/command-t.git'
+
+filetype plugin indent on     " required!
+ "
+ " Brief help
+ " :BundleList          - list configured bundles
+ " :BundleInstall(!)    - install(update) bundles
+ " :BundleSearch(!) foo - search(or refresh cache first) for foo
+ " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+ "
+ " see :h vundle for more details or wiki for FAQ
+ " NOTE: comments after Bundle command are not allowed..
+
+" Configure theme to solarized
+set background=dark
+let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
+colorscheme solarized
+
+nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
+
 set tabstop=4       " Number of spaces that a <Tab> in the file counts for.
- 
 set shiftwidth=4    " Number of spaces to use for each step of (auto)indent.
- 
-"set expandtab       " Use the appropriate number of spaces to insert a <Tab>.
-                    " Spaces are used in indents with the '>' and '<' commands
-                    " and when 'autoindent' is on. To insert a real tab when
-                    " 'expandtab' is on, use CTRL-V <Tab>.
- 
-"set smarttab        " When on, a <Tab> in front of a line inserts blanks
-                    " according to 'shiftwidth'. 'tabstop' is used in other
-                    " places. A <BS> will delete a 'shiftwidth' worth of space
-                    " at the start of the line.
- 
-set showcmd         " Show (partial) command in status line.
-
 set number          " Show line numbers.
 
 set showmatch       " When a bracket is inserted, briefly jump to the matching
                     " one. The jump is only done if the match can be seen on the
                     " screen. The time to show the match can be set with
                     " 'matchtime'.
- 
-"set hlsearch        " When there is a previous search pattern, highlight all
-                    " its matches.
- 
 set incsearch       " While typing a search command, show immediately where the
                     " so far typed pattern matches.
  
@@ -37,19 +62,8 @@ set ignorecase      " Ignore case in search patterns.
  
 set smartcase       " Override the 'ignorecase' option if the search pattern
                     " contains upper case characters.
- 
-set backspace=2     " Influences the working of <BS>, <Del>, CTRL-W
-                    " and CTRL-U in Insert mode. This is a list of items,
-                    " separated by commas. Each item allows a way to backspace
-                    " over something.
- 
 set autoindent      " Copy indent from current line when starting a new line
                     " (typing <CR> in Insert mode or when using the "o" or "O"
-                    " command).
- 
-"set textwidth=79    " Maximum width of text that is being inserted. A longer
-                    " line will be broken after white space to get this width.
- 
 set formatoptions=c,q,r,t " This is a sequence of letters which describes how
                     " automatic formatting is to be done.
                     "
@@ -65,25 +79,9 @@ set formatoptions=c,q,r,t " This is a sequence of letters which describes how
  
 set ruler           " Show the line and column number of the cursor position,
                     " separated by a comma.
- 
-set background=dark " When set to "dark", Vim will try to use colors that look
-                    " good on a dark background. When set to "light", Vim will
-                    " try to use colors that look good on a light background.
-                    " Any other value is illegal.
- 
+                    " command).
 set mouse=a         " Enable the use of the mouse.
 
-set scrolloff=3		" Keep 3 lines below and above cursor
+set scrolloff=3     " Keep 3 lines below and above cursor
 
 set foldmethod=syntax "Enable folding based on syntax
-
-set nocp
-filetype plugin indent on
-syntax on
-
-let g:clang_complete_copen=1
-let g:clang_use_library=1
-let g:clang_user_options = '-std=c++11'
-let g:clang_close_preview=1
-map <F2> :call g:ClangUpdateQuickFix() <CR>
-

@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/patty/.vim/c-support/codesnippets'
-let g:netrw_dirhist_2='/home/patty/.vim/c-support/templates'
-let g:netrw_dirhist_3='/home/patty/bin/Cpp_Projects/Timer'
-let g:netrw_dirhist_4='/home/patty/MyBin/Cpp_Projects/Vector/src_test'
