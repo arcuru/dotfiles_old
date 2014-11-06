@@ -20,6 +20,6 @@ do
 	if  $forced ; then
 		rm ~/.$i
 	fi
-	ln -s ~/dotfiles/$i ~/.$i
+	ln -s ~/github/dotfiles/$i ~/.$i
 done
 
