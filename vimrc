@@ -12,9 +12,9 @@ Bundle 'gmarik/vundle'
 "
 " original repos on github
 Bundle 'Raimondi/delimitMate'
-Bundle 'scrooloose/syntastic'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'scrooloose/syntastic'
+"Bundle 'altercation/vim-colors-solarized'
+"Bundle 'Valloric/YouCompleteMe'
 
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'Lokaltog/vim-easymotion'
@@ -38,12 +38,13 @@ filetype plugin indent on     " required!
  " NOTE: comments after Bundle command are not allowed..
 
 " Configure theme to solarized
+syntax enable
 set background=dark
-let g:solarized_termtrans=1
-let g:solarized_termcolors=256
-let g:solarized_contrast="high"
-let g:solarized_visibility="high"
-colorscheme solarized
+"let g:solarized_termcolors=256
+"let g:solarized_contrast="high"
+"let g:solarized_visibility="high"
+"colorscheme solarized
+
 
 nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
 
