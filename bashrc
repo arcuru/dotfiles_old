@@ -12,17 +12,21 @@ complete -cf sudo
 export EDITOR=vim
 
 #	Overwriting basic commands
-alias ls='ls -ph --color=auto'
+#alias ls='ls -ph --color=auto'
 alias rm='rm -I'
 
 #   Adding a few useful timesavers
 alias tarballpack='tar cvzf $1 $2'
 alias tarballunpack='tar xzvf'
 alias t='tmux'
+alias tl='tmux list-sessions'
+alias ta='tmux attach-session'
 alias v='vim'
 alias vp='vim -u ~/.vimrc-p'
 alias u='yaourt -Syua --noconfirm'
 alias i='yaourt -S --noconfirm'
+alias cp='rsync -P -ah'
+alias mv='rsync -P -ah --remove-sent-files'
 
 # Not needed for Linode
 #alias sus='sudo pm-suspend'
