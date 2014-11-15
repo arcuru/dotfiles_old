@@ -12,7 +12,7 @@ complete -cf sudo
 export EDITOR=vim
 
 #	Overwriting basic commands
-#alias ls='ls -ph --color=auto'
+alias ls='ls -ph'
 alias rm='rm -I'
 
 #   Adding a few useful timesavers
