@@ -1,4 +1,39 @@
 " .vimrc-p
+set nocompatible               " be iMproved
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Plugin 'gmarik/vundle'
+
+" My Bundles
+"
+" original repos on github
+Plugin 'Raimondi/delimitMate'
+"Bundle 'scrooloose/syntastic'
+Plugin 'altercation/vim-colors-solarized'
+"Bundle 'Valloric/YouCompleteMe'
+
+"Bundle 'tpope/vim-fugitive'
+"Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Bundle 'tpope/vim-rails.git'
+" vim-scripts repos
+"Bundle 'L9'
+"Bundle 'FuzzyFinder'
+" non github repos
+"Bundle 'git://git.wincent.com/command-t.git'
+
+filetype plugin indent on     " required!
+
+" Configure theme to solarized
+syntax enable
+set background=dark
+colorscheme solarized
+
 " Python vim settings
 " See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 
